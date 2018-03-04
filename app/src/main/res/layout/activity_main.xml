@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.gayathri.mycalculator.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="122dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:editable="true"
+            android:ems="10"
+            android:textAllCaps="false" />
+    </LinearLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:rowCount="4"
+            android:columnCount="4">
+
+            <Button
+                android:id="@+id/one"
+                android:layout_gravity="left|top"
+                android:onClick="charToNumber"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/four"
+                android:layout_gravity="left|top"
+                android:onClick="charToNumber"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/seven"
+                android:layout_gravity="left|top"
+                android:onClick="charToNumber"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/decimal"
+                android:layout_gravity="left|top"
+                android:onClick="charToNumber"
+                android:text="." />
+
+            <Button
+                android:id="@+id/two"
+                android:layout_gravity="left|top"
+                android:onClick="charToNumber"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/five"
+                android:layout_gravity="left|top"
+                android:onClick="charToNumber"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/eight"
+                android:layout_gravity="left|top"
+                android:onClick="charToNumber"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/zero"
+                android:layout_gravity="left|top"
+                android:onClick="charToNumber"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/three"
+                android:layout_gravity="left|top"
+                android:onClick="charToNumber"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/six"
+                android:layout_gravity="left|top"
+                android:onClick="charToNumber"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/nine"
+                android:layout_gravity="left|top"
+                android:onClick="charToNumber"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/exp"
+                android:layout_gravity="left|top"
+                android:onClick="operation"
+                android:text="e" />
+
+            <Button
+                android:layout_gravity="left|top|fill"
+                android:onClick="operation"
+                android:text="+" />
+
+            <Button
+                android:layout_gravity="left|top|fill"
+                android:onClick="operation"
+                android:text="-" />
+
+            <Button
+                android:layout_gravity="left|top|fill"
+                android:onClick="operation"
+                android:text="*" />
+
+            <Button
+                android:layout_gravity="left|top|fill"
+                android:onClick="operation"
+                android:text="/" />
+
+        </GridLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:rowCount="3"
+            android:columnCount="4">
+
+            <Button
+                android:id="@+id/sin"
+                android:layout_gravity="left|top"
+                android:onClick="operation"
+                android:text="sin"
+                tools:text="sin" />
+
+            <Button
+                android:id="@+id/log"
+                android:layout_gravity="left|top"
+                android:onClick="operation"
+                android:text="log" />
+
+            <Button
+                android:id="@+id/sqrt"
+                android:layout_gravity="left|top"
+                android:onClick="operation"
+                android:text="sqrt" />
+
+            <Button
+                android:id="@+id/cos"
+                android:layout_gravity="left|top"
+                android:onClick="operation"
+                android:text="cos" />
+
+            <Button
+                android:id="@+id/fact"
+                android:layout_gravity="left|top"
+                android:onClick="operation"
+                android:text="!" />
+
+            <Button
+                android:id="@+id/mod"
+                android:layout_gravity="left|top"
+                android:onClick="operation"
+                android:text="%" />
+
+            <Button
+                android:id="@+id/tan"
+                android:layout_gravity="left|top"
+                android:onClick="operation"
+                android:text="tan" />
+
+            <Button
+                android:id="@+id/power"
+                android:layout_gravity="left|top"
+                android:onClick="operation"
+                android:text="^" />
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_gravity="left|top"
+                android:text="clear" />
+
+            <Button
+                android:id="@+id/ln"
+                android:layout_gravity="left|top|fill"
+                android:onClick="operation"
+                android:text="ln" />
+
+            <Button
+                android:id="@+id/pi"
+                android:layout_gravity="left|top|fill"
+                android:onClick="operation"
+                android:text="pi" />
+
+            <Button
+                android:id="@+id/equal"
+                android:layout_gravity="left|top|fill"
+                android:background="@color/colorPrimaryDark"
+                android:text="=" />
+        </GridLayout>
+    </LinearLayout>
