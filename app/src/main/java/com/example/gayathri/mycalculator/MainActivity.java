@@ -173,7 +173,11 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                     else
-                        c /= Integer.parseInt(a) ;
+                        c = c / Integer.parseInt(a) ;
+                    a = "";
+                        /*System.out.println(a);
+                        Toast g = Toast.makeText(getApplicationContext(),Integer.toString(c),Toast.LENGTH_SHORT);
+                        g.show();;*/
                     /*String q = t.getText().toString();
                     t.setText(q + c);*/
                 }
